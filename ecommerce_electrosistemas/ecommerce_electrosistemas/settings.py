@@ -99,7 +99,17 @@ if DEBUG:
             'PORT': 3306
         }
     }
-else: pass
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'cpablop1$spv',
+            'USER': 'cpablop1',
+            'PASSWORD': 'Pablo-1998*',
+            'HOST': 'cpablop1.mysql.pythonanywhere-services.com',
+            'PORT': 3306
+        }
+    }
 
 
 # Password validation
